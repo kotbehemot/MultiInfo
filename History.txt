@@ -1,3 +1,6 @@
+2012-06-26 Version 0.0.8 Piotr Barczuk
+  - changed multiinfo API url
+
 2012-05-24 Version 0.0.7 Piotr Barczuk
   - added support for trusted certificates signing
 

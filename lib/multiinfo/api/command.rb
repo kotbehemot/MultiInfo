@@ -1,7 +1,7 @@
 require "cgi"
 module MultiInfo
   class API
-    API_SERVICE_HOST = 'https://www.multiinfo.plus.pl/'
+    API_SERVICE_HOST = 'https://api1.multiinfo.plus.pl/'
     API_NAME = 'smsapi4'
     API_SCRIPT_TYPE = 'aspx'
     

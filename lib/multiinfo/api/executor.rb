@@ -27,8 +27,10 @@ module MultiInfo
     
       def execute(command_name, parameters={})
         request_uri = command(command_name, parameters)
-        puts "[debug] Executing command '#{command_name}': #{request_uri}" if @debug
-        [command_name, get_response(request_uri)]
+        puts "[multiinfo debug] Executing command '#{command_name}': #{request_uri}" if @debug
+        ret = [command_name, get_response(request_uri)]
+        puts "[multiinfo debug] Raw response: #{ret[1]}"
+        ret
       end
 
       def in_test_mode?
