@@ -29,7 +29,7 @@ module MultiInfo
         request_uri = command(command_name, parameters)
         puts "[multiinfo debug] Executing command '#{command_name}': #{request_uri}" if @debug
         ret = [command_name, get_response(request_uri)]
-        puts "[multiinfo debug] Raw response: #{ret[1]}"
+        puts "[multiinfo debug] Raw response: #{ret[1]}" if @debug
         ret
       end
 
